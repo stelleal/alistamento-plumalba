@@ -1,0 +1,147 @@
+body {
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #372f33;
+	background: #8f8d81;
+}
+
+h1 {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 8px 0 0 8px;
+}
+
+main {
+	margin: 20px;
+}
+
+.container {
+	max-width: 1280px;
+	margin: 60px auto;
+	display: grid;
+	grid-template-columns: 4fr 5fr;
+	box-sizing: border-box;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px 1px #372f33;
+}
+
+.formulario {
+	background-color: #f3f0e3;
+	border-radius: 0 8px 8px 0;
+	padding: 48px;
+}
+
+.formulario h1 {
+	margin-bottom: 16px;
+	font: 700 1.75rem/1.5 'Merriweather', serif;
+}
+
+.formulario span {
+	color: #e42e21;
+	font-size: 2rem;
+}
+
+.form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.col-2 {
+	grid-column: 1 / -1;
+}
+
+.form label {
+	display: block;
+	font: 600 1rem/1.5 'Poppins', sans-serif;
+	margin-bottom: 4px;
+}
+
+input,
+textarea {
+	background: rgba(0, 0, 0, 0.05);
+	border: 2px solid transparent;
+	border-radius: 4px;
+	padding: 12px;
+	width: 100%;
+	box-sizing: border-box;
+	font: 400 1rem/1.5 'Roboto', sans-serif;
+	color: #372f33;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+	border-color: #866757;
+	background: #f3f0e3;
+	box-shadow: 0 0 1px 1px #a47347;
+}
+
+button {
+	display: block;
+	padding: 16px 32px;
+	background: linear-gradient(180deg, #a47347, #ad815a);
+	border-radius: 8px;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+	text-transform: uppercase;
+	color: #f3f0e3;
+	font: 600 1.125rem/1.35 'Poppins', sans-serif;
+	border: 2px solid transparent;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #a47347;
+}
+
+button:focus {
+	outline: none;
+	background: #a47347;
+	border-color: #372f33;
+}
+
+@media (max-width: 900px) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+
+	img {
+		border-radius: 8px 8px 0 0;
+	}
+
+	.formulario {
+		border-radius: 0 0 8px 8px;
+	}
+}
+
+@media (max-width: 500px) {
+	main {
+		margin: 0;
+	}
+
+	.container {
+		margin: 0 auto;
+	}
+
+	.container,
+	.formulario,
+	img {
+		border-radius: 0;
+	}
+
+	.formulario {
+		padding: 24px 48px;
+	}
+
+	.form {
+		grid-template-columns: 1fr;
+	}
+}

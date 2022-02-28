@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Alistamento | Plumalba</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="preload" href="style.css" as="style" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<picture>
+					<img
+						src="./pt.jpg"
+						width="1920"
+						height="1080"
+						alt="Aventureiros sentados em volta de uma fogueira de noite."
+					/>
+				</picture>
+				<section class="formulario">
+					<h1>Junte-se a guilda <span>Plumarubra</span></h1>
+					<form class="form" action="./index.html">
+						<div class="col-2">
+							<label for="nome">Nome</label>
+							<input type="text" id="nome" name="nome" placeholder="Seu nome" />
+						</div>
+						<div>
+							<label for="raca">Raça</label>
+							<input type="text" id="raca" name="raca" placeholder="Raça e Variante" />
+						</div>
+						<div>
+							<label for="idade">Idade</label>
+							<input type="number" min="0" id="idade" name="idade" />
+						</div>
+						<div>
+							<label for="classe">Classe</label>
+							<input type="text" id="classe" name="classe" placeholder="Classe ou Profissão" />
+						</div>
+						<div>
+							<label for="subclasse">Especialização</label>
+							<input type="text" id="subclasse" name="subclasse" placeholder="Subclasse" />
+						</div>
+						<div class="col-2">
+							<label for="feito">Qual foi o seu maior feito?</label>
+							<textarea
+								name="feito"
+								id="feito"
+								rows="5"
+								placeholder="Algo que lhe traz orgulho!"
+							></textarea>
+						</div>
+						<button class="col-2">Enviar</button>
+					</form>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>
